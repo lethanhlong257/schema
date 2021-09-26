@@ -4,9 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "bash ./scripts/compile.sh",
-    "postinstall": "bash ./scripts/install-protoc.sh; bash ./scripts/install-protoc-gen-web.sh",
-    "start": "DEBUG=search-service:* nodemon --watch src --exec babel-node src/index.js"
   },
   "author": "longle",
   "license": "ISC",
