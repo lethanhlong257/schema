@@ -1,0 +1,17 @@
+{
+  "name": "schema",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "bash ./scripts/compile.sh",
+    "postinstall": "bash ./scripts/install-protoc.sh; bash ./scripts/install-protoc-gen-web.sh"
+  },
+  "author": "longle",
+  "license": "ISC",
+  "devDependencies": {
+    "copy": "^0.3.2",
+    "google-protobuf": "^3.7.0",
+    "grpc-tools": "^1.9.0"
+  }
+}

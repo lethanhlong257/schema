@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package icommerce;
+
+service SearchServiceRpc {
+  rpc searchProduct(SearchProductRequest) returns (SearchServiceResponse) {}
+  rpc filterProduct(FilterProductRequest) returns (SearchServiceResponse) {}
+}
+
+message FilterProductRequest {
+  string name = 1;
+  double minPrice = 2;
+  double maxPrice = 3;
+  string color = 4;
+  string branch = 5;
+  string description = 6;
+}
+
+message SearchProductRequest {
+  string keyword = 1;
+}
+
+message SearchServiceResponse {
+  string value = 1;
+  string error = 2;
+}
